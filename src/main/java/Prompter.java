@@ -17,6 +17,7 @@ public class Prompter {
         scanner = new Scanner(System.in);
     }
 
+    //used to count the number of guesses done and count the number of tries. After counting, it displays the guesses you've done
     public void promptForGuess() {
         int numberOfTries = 0;
         while (numberOfTries < Hangman.NUMBER_OF_TRIES && !game.isWon()) {
@@ -36,6 +37,7 @@ public class Prompter {
         }
     }
 
+    // used to determine if you have won or lost
     private void displayOutCome(int i , int j){
         if(i == Hangman.NUMBER_OF_TRIES ){
             System.out.println("Game Over !");
