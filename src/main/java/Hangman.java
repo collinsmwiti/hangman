@@ -12,6 +12,7 @@ public class Hangman {
         misses = "";
     }
 
+//boolean method where is checking if the guessed character is true or false. If its true and you have typed it twice, it will throw an exception and tell you you have already made the guess. If its false, it counts the misses
     public boolean applyGuess(char c) {
         boolean isCorrect = false;
         if (hits.indexOf(c) != -1 || misses.indexOf(c) != -1) {
