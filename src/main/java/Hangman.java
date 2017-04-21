@@ -12,7 +12,7 @@ public class Hangman {
         misses = "";
     }
 
-//boolean method where is checking if the guessed character is true or false. If its true and you have typed it twice, it will throw an exception and tell you you have already made the guess. If its false, it counts the misses
+//boolean method where is checking if the guessed character is true or false. If its true and you have typed it twice, it will throw an exception and tell you you have already made the guess. If its false, it counts the misses. It also if a string is entered only the first character matters
     public boolean applyGuess(char c) {
         boolean isCorrect = false;
         if (hits.indexOf(c) != -1 || misses.indexOf(c) != -1) {
@@ -27,13 +27,14 @@ public class Hangman {
         return isCorrect;
 
     }
+    // to prevent one from entering an empty guess
     public boolean applyGuess(String s) {
         if (s.length() == 0) {
             throw new IllegalArgumentException("Please make sure to enter a guess");
         }
         return applyGuess(s.charAt(0));
     }
-
+    // used for display amount of characters guessed in the console
     public String getCurrentProgress() {
         String progress = "";
         for (char c : answer.toCharArray()) {
