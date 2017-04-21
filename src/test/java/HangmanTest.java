@@ -9,6 +9,8 @@ import static org.junit.Assert.*;
 //class HangmanTest
 public class HangmanTest {
     Hangman hangman ;
+    
+    // used to add additional functionality which applies to all tasks within the test class but in a generic way
     @Rule
     public ExpectedException exception = ExpectedException.none();
 
