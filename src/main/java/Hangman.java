@@ -1,9 +1,11 @@
+//access modifiers for class Hangman
 public class Hangman {
     private String answer;
     private String hits;
     private String misses;
     public static final int NUMBER_OF_TRIES = 7;
 
+//declaring the class to give a string answer in full where is an empty space at first inorder to be filled by each character which has been guessed
     public Hangman(String answer) {
         this.answer = answer;
         hits = "";
