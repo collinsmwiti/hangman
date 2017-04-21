@@ -6,11 +6,12 @@ import java.util.List;
 import java.util.ArrayList.*;
 import java.util.*;
 
-// declaring of access modifiers
+// access modifiers
 public class Prompter {
     private Scanner scanner;
     private Hangman game ;
 
+    // introducing scanner in constructor Prompter. Its much efficient in computation of data and very easy to use
     public Prompter(Hangman game){
         this.game = game ;
         scanner = new Scanner(System.in);
