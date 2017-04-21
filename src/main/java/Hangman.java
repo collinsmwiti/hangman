@@ -47,6 +47,7 @@ public class Hangman {
         return progress;
     }
 
+    // is used to determine if you have won the game
     public boolean isWon(){
         String progress = getCurrentProgress();
         if(progress.indexOf('-') == -1){
@@ -56,14 +57,17 @@ public class Hangman {
         }
     }
 
+    // used to return the answer
     public String getAnswer() {
         return answer;
     }
 
+    //used to return the hits
     public String getHits() {
         return hits;
     }
 
+    // used to return the misses
     public String getMisses() {
         return misses;
     }
