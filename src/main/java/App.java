@@ -1,5 +1,7 @@
+//imports
 import java.util.*;
 
+//class app ( my main class)
 public class App {
 
   public static void main(String[] args) {

@@ -47,6 +47,7 @@ public class Prompter {
         }
     }
 
+    // used to determine the progress
     private void displayProgress(){
         System.out.println(game.getCurrentProgress());
     }
