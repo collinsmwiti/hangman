@@ -4,6 +4,7 @@ import java.util.*;
 //class app ( my main class)
 public class App {
 
+// including random class and array list inorder for my game to select among them anonymously
   public static void main(String[] args) {
     List<Character> guess = new ArrayList<>();
     Random randomNumber  = new Random();
